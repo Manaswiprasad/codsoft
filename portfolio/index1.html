@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Anchuri Manaswiprasad</h1>
+        <p>Python & Blockchain Developer | AI Enthusiast</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <p>Hello! I'm a passionate developer with expertise in Python, Blockchain, AI, and Machine Learning.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python & ML</li>
+            <li>Blockchain</li>
+            <li>AI & Deep Learning</li>
+            <li>Frontend Development (HTML, CSS, JS, React)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <input type="text" id="searchBar" placeholder="Search Projects..." onkeyup="filterProjects()">
+        
+        <div class="project-list">
+            <div class="project" data-category="ml">
+                <h3>E-commerce ML Website</h3>
+                <p>Developed an e-commerce website using Machine Learning.</p>
+            </div>
+            <div class="project" data-category="blockchain">
+                <h3>Blockchain Land Registry</h3>
+                <p>Blockchain-based system with ML for land price detection.</p>
+            </div>
+            <div class="project" data-category="ai">
+                <h3>Pothole Detection</h3>
+                <p>AI-powered pothole detection system.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume2.pdf" download class="resume-btn">Download My Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
