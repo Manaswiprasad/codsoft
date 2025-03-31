@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Online Quiz Maker</h1>
+        <a href="#" class="btn" onclick="showQuizCreation()">Create a Quiz</a>
+        <a href="#" class="btn" onclick="showQuizTaking()">Take a Quiz</a>
+    </div>
+    
+    <div class="container quiz-container" id="quizCreation">
+        <h2>Create a Quiz</h2>
+        <form id="quizForm">
+            <input type="text" id="question" placeholder="Enter Question" required>
+            <input type="text" id="option1" placeholder="Option 1" required>
+            <input type="text" id="option2" placeholder="Option 2" required>
+            <input type="text" id="option3" placeholder="Option 3" required>
+            <input type="text" id="option4" placeholder="Option 4" required>
+            <select id="correctAnswer">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+            </select>
+            <button type="submit">Save Question</button>
+        </form>
+    </div>
+    
+    <div class="container quiz-container" id="quizTaking">
+        <h2>Take a Quiz</h2>
+        <p id="quizQuestion"></p>
+        <div id="quizOptions"></div>
+        <button onclick="submitAnswer()">Submit</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
